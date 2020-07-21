@@ -20,6 +20,7 @@ jobs:
       - run: make test
       - store_test_results:
           path: junit-reports
+      - run: make test-e2e
   coverage:
     <<: *defaults
     steps:
