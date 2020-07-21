@@ -105,7 +105,7 @@ test-codecept: install stop-dev-server
 	rm -rf ./test-e2e/output
 	rm -rf ./test-e2e/staging
 	mkdir ./test-e2e/staging
-	yarn wait-on http://localhost:8000 && npx codeceptjs run --steps
+	yarn wait-on http://localhost:8000 && npx codeceptjs run-rerun
 	$(call stop_dev_server)
 .PHONY: test-codecept
 
