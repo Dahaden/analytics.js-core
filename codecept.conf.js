@@ -12,7 +12,7 @@ exports.config = {
       url: 'http://www.library-test-site.com/',
       show: false,
       windowSize: '1200x900',
-      args: ['--disable-web-security']
+      args: ['--disable-web-security', '--disable-dev-shm-usage']
     },
     MockRequestHelper: {
       require: '@codeceptjs/mock-request',
